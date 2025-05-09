@@ -23,7 +23,7 @@ db.owners =  require("./models/ownerModel")(sequelize,DataTypes)
 
 
 // migrate code ho yo chai hai 
-sequelize.sync({force : false}).then(()=>{
+sequelize.sync({force : true}).then(()=>{
     console.log("Migration Successful 🚀")
 })
 

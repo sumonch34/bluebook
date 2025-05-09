@@ -16,7 +16,7 @@ const taxModel = (sequelize, DataTypes) =>{
         }, 
         no_of_years_to_reneW : {
             type : DataTypes.INTEGER,
-            allowNull : false
+            
         },
         fine : {
             type : DataTypes.FLOAT,

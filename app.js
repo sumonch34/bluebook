@@ -1,20 +1,18 @@
-const express = require("express");
-const { taxes } = require("./db/connection.js");
+const express = require("express")
+const taxRoute = require("./routes/taxRoute")
 
 
 
 
 
 const app = express()
-// require("./db/connection.js");
+require("./db/connection")
+app.use(express.json())
 
-// app.get("/taxes", async function(req, res) {
-//   const allTaxes = await taxes.findAll()
-//   res.json({
-//     message: "John Doe",
-//     taxes: allTaxes,
-//   });
-// });
+app.use("", taxRoute)
+
+app.get("/taxes",  )
+
 
 
 app.listen(5000, function() {
